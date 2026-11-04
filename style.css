@@ -23,3 +23,5 @@ footer{margin-top:36px;color:var(--muted);font-size:14px}
 .review-name{font-weight:800}
 .review-stars{color:#f5b800;letter-spacing:2px}
 .review-text{margin:6px 0;white-space:pre-line;overflow-wrap:anywhere}
+ol{padding-left:20px;margin:6px 0}
+ol li{margin:6px 0}

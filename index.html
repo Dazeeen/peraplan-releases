@@ -6,7 +6,7 @@
 <title>PeraPlan</title>
 <meta name="description" content="PeraPlan — a budget planner for couples, families and friends. By Dazen Development.">
 <link rel="icon" href="logo.png">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com https://script.google.com https://script.googleusercontent.com; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,16 @@
 
 <h1>Budget planner para sa inyong dalawa — pati sa pamilya at barkada.</h1>
 <p>PeraPlan helps couples, families and friends plan money together: income and paydays, expenses, bills, budget limits and savings goals — in Tagalog or English.</p>
-<p><a class="btn" href="https://github.com/Dazeeen/peraplan-releases/releases/latest">Download for Android</a><span class="muted">Android 13 and up</span></p>
+<p><a class="btn" id="download" href="https://github.com/Dazeeen/peraplan-releases/releases/latest">Download for Android</a><span class="muted" id="download-info">Android 13 and up</span></p>
+
+<div class="card" id="install"><h2>Installing / Pag-install</h2>
+<ol>
+<li><b>Android 13 o mas bago ang kailangan.</b> Tingnan sa Settings → About phone → Android version. Sa Android 12 pababa, lalabas ang "There was a problem parsing the package" — hindi ito gagana doon.</li>
+<li>I-download gamit ang <b>Chrome</b> at hintaying matapos (mga 50–60 MB). Huwag i-forward ang APK sa Messenger o ibang chat app — madalas nasisira o napuputol ang file, kaya "parse error".</li>
+<li>Buksan ang file mula sa <b>Downloads</b>, at payagan ang "Install unknown apps" para sa Chrome kapag tinanong.</li>
+<li>Kung may PeraPlan na: i-update lang mula sa app (Iba pa → Tingnan kung may update). Hindi nabubura ang data.</li>
+</ol>
+<p class="muted">Needs Android 13 or newer. Download with Chrome and let it finish; files forwarded through chat apps often arrive broken and show "parse error".</p></div>
 
 <div class="card"><h2>No server of our own</h2><p>Your plans are saved on your phone. Phones in a plan sync through encrypted messages, and the key exists only inside the plan's invite code.</p></div>
 <div class="card"><h2>Optional Google Drive backup</h2><p>If you sign in with Google, PeraPlan saves your plans in a hidden app folder in <b>your own</b> Google Drive, so you can get them back on a new phone. PeraPlan can't see any other files in your Drive.</p></div>
@@ -30,6 +39,7 @@
 
 <footer>© 2026 Reynier Apurillo · Dazen Development · <a href="mailto:apurillo.r.b@gmail.com">apurillo.r.b@gmail.com</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
 </main>
+<script src="download.js"></script>
 <script src="reviews.js"></script>
 </body>
 </html>
