@@ -17,3 +17,9 @@ h2{font-size:19px;margin:22px 0 6px}
 code{background:var(--line);padding:1px 6px;border-radius:6px;font-size:14px}
 .btn{display:inline-block;background:var(--accent);color:#fff !important;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;margin-right:8px}
 footer{margin-top:36px;color:var(--muted);font-size:14px}
+.rating{font-size:20px;font-weight:800;color:var(--accent);margin:4px 0}
+.review{padding:14px 18px}
+.review-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.review-name{font-weight:800}
+.review-stars{color:#f5b800;letter-spacing:2px}
+.review-text{margin:6px 0;white-space:pre-line;overflow-wrap:anywhere}
